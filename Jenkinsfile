@@ -1,14 +1,10 @@
 pipeline {
     agent any
 
-    triggers {
-        githubPush()
-    }
-
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Alekhyabairagoni/myproject-.git'
+                echo 'Checking out code...'
             }
         }
 
